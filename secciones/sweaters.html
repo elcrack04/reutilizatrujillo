@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="portade.css" rel="stylesheet" type="text/css">
+    <title>Carrito de compras</title>
+</head>
+    
+<body>
+
+    <header id="header">
+        <h1>SECCIÓN SWEATERS</h1>
+        <li><div id="carrito-icono" onclick="mostrarCarrito()">🛒</div></li>
+    </header>
+
+    <div id="contenedor" class="contenedor">
+
+        <div>
+            <img src="img/polera-01.png" alt="producto 1">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 39<span>.90</span></p>
+                <button class="add-to-cart-btn" onclick="agregarAlCarrito('Sweater 1', 39.90)">
+                    Añadir al Carrito
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-02.png" alt="producto 2">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 49<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-03.png" alt="producto 3">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 44<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-04.png" alt="producto 4">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 34<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-05.png" alt="producto 5">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 29<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-06.png" alt="producto 6">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 24<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-07.png" alt="producto 7">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 42<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-08.png" alt="producto 8">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 49<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-09.png" alt="producto 9">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 39<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-010.png" alt="producto 10">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 32<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-011.png" alt="producto 11">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 28<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-012.png" alt="producto 12">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 49<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-013.png" alt="producto 13">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 35<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-014.png" alt="producto 14">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 31<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polera-015.png" alt="producto 15">
+            <div class="informacion">
+                <p>Sweater</p>
+                <p class="precio">S/. 47<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <h2>Productos</h2>
+
+    <ul id="lista-carrito"></ul>
+
+    <p>Total: S/. <span id="total">0.00</span></p>
+    <button onclick="realizarCompra()">Comprar</button>
+
+    <script src="portade.js"></script>
+
+</body>
+
+</html>

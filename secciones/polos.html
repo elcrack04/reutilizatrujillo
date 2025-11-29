@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="portade.css" rel="stylesheet" type="text/css">
+    <title>Carrito de compras</title>
+</head>
+    
+<body>
+
+    <header id="header">
+        <h1>SECCIÓN POLOS</h1>
+        <li><div id="carrito-icono" onclick="mostrarCarrito()">🛒</div></li>
+    </header>
+
+    <div id="contenedor" class="contenedor">
+
+        <div>
+            <img src="img/polo-01.jpg" alt="producto 1">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 29<span>.90</span></p>
+                <button class="add-to-cart-btn" onclick="agregarAlCarrito('Polo 1', 29.90)">
+                    Añadir al Carrito
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-02.jpg" alt="producto 2">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 39<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-03.jpg" alt="producto 3">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 49<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-04.jpg" alt="producto 4">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 44<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-05.jpg" alt="producto 5">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 34<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-06.jpg" alt="producto 6">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 24<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-07.jpg" alt="producto 7">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 39<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-08.jpg" alt="producto 8">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 49<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-09.jpg" alt="producto 9">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 29<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-010.jpg" alt="producto 10">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 22<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-011.jpg" alt="producto 11">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 26<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-012.jpg" alt="producto 12">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 49<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-013.jpg" alt="producto 13">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 32<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-014.jpg" alt="producto 14">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 27<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/polo-015.jpg" alt="producto 15">
+            <div class="informacion">
+                <p>Polo</p>
+                <p class="precio">S/. 44<span>.90</span></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <h2>Productos</h2>
+
+    <ul id="lista-carrito"></ul>
+
+    <p>Total: S/. <span id="total">0.00</span></p>
+    <button onclick="realizarCompra()">Comprar</button>
+
+    <script src="portade.js"></script>
+
+</body>
+
+</html>
