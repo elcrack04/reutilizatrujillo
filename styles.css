@@ -425,6 +425,23 @@ input {
     background-color: #ff4242;
 }
 
+@media(max-width: 768px){
+    .product-content {
+        grid-template-columns: 1fr; /* productos en columna */
+        gap: 20px;
+    }
+
+    .popular-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header-txt h1 {
+        font-size: 30px;
+    }
+}
+
 
 
 
