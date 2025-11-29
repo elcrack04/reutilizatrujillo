@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reutiliza Trujillo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<header class="header" id="header">
+
+    <div class="menu container" id="contenedor">
+ 
+        <input type="checkbox" id="menu" />
+        <label for="menu"></label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="">Productos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="secciones/camisas.html">Camisas</a></li>
+                        <li><a href="secciones/deportivos.html">Deportivos</a></li>
+                        <li><a href="secciones/gorras.html">Gorras</a></li>
+                        <li><a href="secciones/pantalos.html">Pantalones</a></li>
+                        <li><a href="secciones/polos.html">Polos</a></li>
+                        <li><a href="secciones/sweaters.html">Sweaters</a></li>
+                        <li><a href="secciones/zapatillas.html">Zapatillas</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="secciones/informacion.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <ul class="menu-extra">
+            <li><div id="carrito-icono" onclick="mostrarCarrito()">🛒</div></li>
+            <li><a class="btn-registrar" href="registro.html">Registrar</a></li>
+        </ul>
+
+    </div>
+
+    <div class="header-content container">
+        <div class="header-txt">
+            <h1><span>¡REUTILIZA TRUJILLO!</span><hr></h1>
+            <p>Economía circular al servicio de tu comunidad.</p>
+           
+            <p>
+                Aquí encontrarás un espacio creado para conectar a la comunidad 
+                a través de la economía circular. Nuestro objetivo es darle una 
+                segunda vida a los productos y reducir los residuos en la ciudad.
+                <br><br>
+                <h3>¡Empieza hoy y sé parte del cambio!</h3>
+            </p>
+
+            <div class="butons">
+                <a href="secciones/informacion.html" class="btn-1">Información</a>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+<div id="carrito" class="carrito oculto">
+    <h3>Carrito de compras</h3>
+    <ul id="lista-carrito"></ul>
+    <p>Total: S/ <span id="total">0.00</span></p>
+    <button class="btn-comprar" onclick="realizarCompra()">Comprar</button>
+</div>
+
+
+
+<section class="popular container">
+    <h2>SELECCIONE SU PREFERIDO <br> <h3>Haga click en cualquier imagen para ir a una categoria <hr><hr></h3></h2>
+    
+    <div class="popular-content">
+        <li><a href="secciones/camisas.html"><img src="imageen/logoCamisa.jpg" alt=""></a></li>
+        <li><a href="secciones/deportivos.html"><img src="imageen/logoDeportivo3.jpg" alt=""></a></li>
+        <li><a href="secciones/gorras.html"><img src="imageen/logoGorra4.jpg" alt=""></a></li>
+        <li><a href="secciones/pantalos.html"><img src="imageen/logoPantalon.jpg" alt=""></a></li>
+        <li><a href="secciones/polos.html"><img src="imageen/logoPolo1.jpg" alt=""></a></li>
+        <li><a href="secciones/sweaters.html"><img src="imageen/logoSweaters3.jpg" alt=""></a></li>
+        <li><a href="secciones/zapatillas.html"><img src="imageen/logoZapatilla1.jpg" alt=""></a></li>
+    </div>
+
+    <hr>
+    <hr>
+</section>
+
+
+<main class="product container">
+
+    <h2>Todos Los Descuentos</h2>
+
+    <div class="product-content">
+
+        <div class="product-1">
+            <img src="imageen/cambiar5.jpg" alt="">
+            <div class="product-txt">
+                <h3>Camisa clásica</h3>
+                <div class="price">
+                    <p>S/ 49.90</p>
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Camisa clásica', 49.90)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-1">
+            <img src="imageen/descuento2.jpg" alt="">
+            <div class="product-txt">
+                <h3>Polo a rayas</h3>
+                <div class="price">
+                    <p>S/ 39.90</p>
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Polo a rayas', 39.90)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-1">
+            <img src="imageen/descuento3.jpg" alt="">
+            <div class="product-txt">
+                <h3>Chaqueta The North</h3>
+                <div class="price">
+                    <p>S/ 69.90</p>
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Chaqueta The North', 69.90)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-1">
+            <img src="imageen/cambiar3.jpg" alt="">
+            <div class="product-txt">
+                <h3>Sweater de lana</h3>
+                <div class="price">
+                    <p>S/ 59.90</p>
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Sweater de lana', 59.90)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-1">
+            <img src="imageen/descuento5.jpg" alt="">
+            <div class="product-txt">
+                <h3>Sudadera Crop</h3>
+                <div class="price">
+                    <p>S/ 54.90</p>
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Sudadera Crop', 54.90)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-1">
+            <img src="imageen/cambiar4.jpg" alt="">
+            <div class="product-txt">
+                <h3>Polo camisa</h3>
+                <div class="price">
+                    <p>S/ 49.90</p>
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Polo camisa', 49.90)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-1">
+            <img src="imageen/cambiar6.jpg" alt="">
+            <div class="product-txt">
+                <h3>Camisa verde</h3>
+                <div class="price">
+                    <p>S/ 44.90</p>
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Camisa verde', 44.90)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-1">
+            <img src="imageen/descuento8.jpg" alt="">
+            <div class="product-txt">
+                <h3>Abrigo de lana</h3>
+                <div class="price">
+                    <p>S/ 69.90</p>
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Abrigo de lana', 69.90)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-1">
+            <img src="imageen/descuento9.jpg" alt="">
+            <div class="product-txt">
+                <h3>Converse Chuck</h3>
+                <div class="price">
+                    <p>S/ 70.00</p>
+                    <button class="add-to-cart-btn" onclick="agregarAlCarrito('Converse Chuck', 70.00)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<script src="codigo.js"></script>
+
+</body>
+</html>
