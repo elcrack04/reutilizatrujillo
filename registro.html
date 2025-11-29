@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+
+    <style>
+        /* Fondo del modal */
+        .modal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            inset: 0;
+            background: rgb(32, 25, 53);
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.6s ease;
+        }
+
+        /* Caja principal */
+        .modal-content {
+            background: #0d0d0d;
+            padding: 30px;
+            border-radius: 18px;
+            width: 360px;
+            border: 2px solid #ff5a2c;
+            animation: neonGlow 2s infinite alternate, slideDown 0.6s ease;
+            box-shadow: 0 0 20px rgba(255, 90, 44, 0.4);
+        }
+
+        /* Animación borde iluminado */
+        @keyframes neonGlow {
+            from {
+                box-shadow: 0 0 15px #ff5a2c, 0 0 25px #ff5a2c inset;
+            }
+            to {
+                box-shadow: 0 0 25px #ff3e0a, 0 0 40px #ff3e0a inset;
+            }
+        }
+
+        /* Título */
+        h2 {
+            color: #ff5a2c;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 0 0 8px #ff5a2c;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Inputs */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #ff5a2c;
+            background: #111;
+            color: #fff;
+            outline: none;
+            transition: 0.3s ease;
+        }
+
+        input:focus {
+            box-shadow: 0 0 10px #ff5a2c;
+            border-color: #ff5a2c;
+        }
+
+        /* Botón */
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 10px;
+            background: #ff5a2c;
+            color: #000;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s ease;
+            box-shadow: 0 0 10px #ff5a2c;
+        }
+
+        button:hover {
+            background: #ff3e0a;
+            box-shadow: 0 0 20px #ff5a2c;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h2>Registrarse</h2>
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo">
+        <input type="password" placeholder="Contraseña">
+        <button onclick="registrar()">Registrar</button>
+    </div>
+</div>
+
+<script>
+    function registrar() {
+        alert("¡Registrado correctamente!");
+        window.location.href = 'index.html';
+    }
+</script>
+
+</body>
+</html>
